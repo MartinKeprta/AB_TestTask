@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login and Registration">
+    <test name="Standard login">
+        <!-- For reviewer , here You should insert valid login data-->
+        <parameter name="validUserName" value="tester456@gmail.com"/>
+        <parameter name="validUserPass" value="test@123"/>
+        <classes>
+            <class name="login.LoginPageTestStandard"/>
+        </classes>
+    </test>
+
+    <test name="SSO Login">
+        <classes>
+            <class name="login.LoginPageTestSSO"/>
+        </classes>
+    </test>
+</suite>
